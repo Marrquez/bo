@@ -1,25 +1,12 @@
 import React, { Component } from 'react';
 import './Home.css';
+import LeftSidebar from '../left-sidebar/LeftSidebar';
 
 class Home extends Component {
   render() {
     return (
         <div id="outer-container">
-            <section id="left-sidebar">
-                <div className="logo">
-                    <a href="#intro" className="link-scroll"><img src="assets/images/other_images/logo.png" alt="Twilli Air" /></a>
-                </div>
-                <div id="mobile-menu-icon" className="visible-xs"><span className="glyphicon glyphicon-th"></span></div>
-                {/* <div id="mobile-menu-icon" className="visible-xs"  onClick="toggle_main_menu();" ><span className="glyphicon glyphicon-th"></span></div> */}
-                <ul id="main-menu">
-                    <li id="menu-item-text" className="menu-item scroll"><a href="#text">Text</a></li>
-                    <li id="menu-item-carousel" className="menu-item scroll"><a href="#carousel">Carousel</a></li>
-                    <li id="menu-item-grid" className="menu-item scroll"><a href="#grid">Grid</a></li>
-                    <li id="menu-item-featured" className="menu-item scroll"><a href="#featured">Featured</a></li>
-                    <li id="menu-item-tabs" className="menu-item scroll"><a href="#tabs">Tabs</a></li>
-                    <li id="menu-item-contact" className="menu-item scroll"><a href="#contact">Contact</a></li>
-                </ul>
-            </section>
+            <LeftSidebar></LeftSidebar>
             <section id="main-content" className="clearfix">
                 <article id="intro" className="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg5.jpg" >
                     <div className="content-wrapper clearfix wow fadeInDown" data-wow-delay="0.3s">

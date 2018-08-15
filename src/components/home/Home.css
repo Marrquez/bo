@@ -7,3 +7,13 @@
   max-height: 750px;
   min-height: 750px;
 }
+
+@media (max-height: 650px) {
+  #main-content .section-wrapper .content-wrapper {
+    position: static !important;
+  }
+}
+
+h1, h4, h5 {
+  color: #01579B !important;
+}
