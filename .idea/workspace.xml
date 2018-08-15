@@ -2,17 +2,213 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6957422d-d934-4019-b0ac-eead29711ed1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/base/Base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/base/Base.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/base/Base.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/font-awesome/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/Apache License.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Bold-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Bold-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Bold-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Bold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Italic-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Italic-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Italic-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Italic-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Light-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Light-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Light-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Light-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Regular-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Regular-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Regular-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Semibold-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Semibold-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Semibold-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/OpenSans-Semibold-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/fonts/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/bg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/bg4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/bg5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/bg6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/bg7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/gallery-thumb-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/gallery-thumb-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/gallery-thumb-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/gallery-thumb-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/gallery-thumb-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/gallery-thumb-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/project-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/project-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/project-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/project-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/project-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/project-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/project-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/project-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/tabs-icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/tabs-icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/tabs-icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/tabs-icon4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/top-image1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/top-image2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/top-image3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/transp-image1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/transp-image2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/transp-image3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/transp-image4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/transp-image5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/transp-image5b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/transp-image6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/other_images/transp-image7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/background-image-overlay-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/background-image-overlay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/carousel_arrow_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/carousel_arrow_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/loader-form.GIF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/loader.GIF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/mobile_section_divider.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/more-plus-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/aim.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/behance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/digg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/dribbble.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/ember.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/evernote.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/flickr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/forrst.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/github.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/googleplus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/last-fm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/linkedin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/paypal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/rss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/sharethis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/skype.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/tumblr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/vimeo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/wordpress.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/yahoo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/youtube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/theme_images/social_icons/zerply.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/detectmobilebrowser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/functions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/functions.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/initialise-functions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/jquery-1.11.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/jquery.easing.1.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/jquery.fitvids.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/jquery.lazyload.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/jquery.nicescroll.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/jquery.scrollstop.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightbox/README.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightbox/css/lightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightbox/css/screen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightbox/img/close-original.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightbox/img/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightbox/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightbox/img/next-original.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightbox/img/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightbox/img/prev-original.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightbox/img/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightbox/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightbox/js/jquery-1.11.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightbox/js/jquery-1.11.0.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightbox/js/lightbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightbox/js/lightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightbox/js/lightbox.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/owl-carousel/AjaxLoader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/owl-carousel/grabbing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/owl-carousel/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/owl-carousel/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/owl-carousel/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/owl-carousel/owl.theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/owl-carousel/owl.transitions.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/jquery.vegas.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/jquery.vegas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/jquery.vegas.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/jquery.vegas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/overlays/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/overlays/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/overlays/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/overlays/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/overlays/05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/overlays/06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/overlays/07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/overlays/08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/overlays/09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/overlays/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/overlays/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/overlays/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/overlays/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/overlays/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/vegas/overlays/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/wow/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/wow/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/php/form_captcha/captcha_img.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/php/form_captcha/fonts/1942.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/php/form_captcha/fonts/licenses/1942 - Freeware License.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/php/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/registerServiceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/registerServiceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,45 +221,107 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Base.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/base/Base.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="Base.test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/base/Base.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Home.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/home/Home.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/home/Home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="Base.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/base/Base.js">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file leaf-file-name="Base.test.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/base/Base.test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Home.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/home/Home.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="5" selection-start-column="5" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/home/Home.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="108">
+                  <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Home.test.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/home/Home.test.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="108">
+                  <caret line="9" selection-start-line="9" selection-end-line="9" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/index.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="96">
+                  <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-306">
+                  <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&lt;!--</find>
+      <find>class=&quot;</find>
+      <find>assets/</find>
+      <find>onclick</find>
+      <find>&quot;#&quot;</find>
+      <find>background-img</find>
+      <find>outer-container</find>
+      <find>vegas-background</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,6 +331,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/components/home/Home.css" />
         <option value="$PROJECT_DIR$/src/components/home/Home.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/index.css" />
       </list>
     </option>
   </component>
@@ -122,6 +383,11 @@
             <path>
               <item name="bo" type="b2602c69:ProjectViewProjectNode" />
               <item name="bo" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -129,13 +395,6 @@
               <item name="bo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -155,6 +414,7 @@
       <recent name="C:\Users\crolaya\Desktop\bo\src\components\home" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\crolaya\Desktop\bo\public" />
       <recent name="C:\Users\crolaya\Desktop\bo\src\components" />
     </key>
   </component>
@@ -180,24 +440,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534369581650</updated>
-      <workItem from="1534369584181" duration="375000" />
+      <workItem from="1534369584181" duration="3402000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="375000" />
+    <option name="totallyTimeSpent" value="3402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="27" width="1942" height="1064" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15279241" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295711" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" weight="0.3295711" />
+      <window_info anchor="bottom" id="Version Control" visible="true" weight="0.3295711" />
       <window_info id="npm" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" weight="0.3295711" />
@@ -237,12 +497,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/wow/wow.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/home/Home.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        <state relative-caret-position="108">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
