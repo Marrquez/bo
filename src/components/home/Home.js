@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../../logo.svg';
 import './Home.css';
 
 class Home extends Component {
@@ -125,28 +124,17 @@ class Home extends Component {
                                             </div>
                                     </div>
                                 </div>
-
                             </div>
-
-
-                            <a className="left carousel-control" href="#features-carousel" data-slide="prev"></a>
-                            <a className="right carousel-control" href="#features-carousel" data-slide="next"></a>
-
+                            <a className="left carousel-control" href="#features-carousel" data-slide="prev"><i></i></a>
+                            <a className="right carousel-control" href="#features-carousel" data-slide="next"><i></i></a>
                         </div>
-
                     </div>
                 </article>
-
                 <article id="grid" className="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg2.jpg">
                     <div className="content-wrapper clearfix">
                         <div className="col-sm-11 col-md-10 pull-right">
-
                             <h1 className="section-title">Grid</h1>
-
-
                             <section className="grid row clearfix clearfix-for-2cols">
-
-
                                 <div className="grid-item col-md-6">
                                     <div className="item-content clearfix">
                                         <span className="icon fa fa-area-chart"></span>
@@ -156,8 +144,6 @@ class Home extends Component {
                                         </div>
                                     </div>
                                 </div>
-
-
                                 <div className="grid-item col-md-6">
                                     <div className="item-content clearfix">
                                         <span className="icon fa fa-globe"></span>
@@ -167,8 +153,6 @@ class Home extends Component {
                                         </div>
                                     </div>
                                 </div>
-
-
                                 <div className="grid-item col-md-6">
                                     <div className="item-content clearfix">
                                         <span className="icon fa fa-certificate"></span>
@@ -178,8 +162,6 @@ class Home extends Component {
                                         </div>
                                     </div>
                                 </div>
-
-
                                 <div className="grid-item col-md-6">
                                     <div className="item-content clearfix">
                                         <span className="icon fa fa-cloud"></span>
@@ -189,23 +171,15 @@ class Home extends Component {
                                         </div>
                                     </div>
                                 </div>
-
                             </section>
-
                         </div>
                     </div>
                 </article>
-
                 <article id="featured" className="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg3.jpg">
                     <div className="content-wrapper clearfix">
                         <div className="col-sm-11 pull-right">
-
                             <h1 className="section-title">Featured</h1>
-
-
                             <section className="feature-columns row clearfix">
-
-
                                 <article className="feature-col col-md-4">
                                     <a href="" className="thumbnail linked">
                                         {/*<a href="" onclick="populate_and_open_modal(event, 'modal-content-6');" className="thumbnail linked">*/}
@@ -217,34 +191,25 @@ class Home extends Component {
                                             <p>This feature contains an image carousel when you open popup.</p>
                                         </div>
                                     </a>
-
                                     <div className="content-to-populate-in-modal" id="modal-content-6">
                                         <h1>Sed scelerisque</h1>
                                         <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat.<br/></p>
-
-
                                         <div id="unique-id-for-image-slider" className="owl-carousel popup-image-gallery">
-
                                             <div>
-
                                                 <h6 className="caption">Caption for Image 1</h6>
-                                                <img className="lazyOwl" data-src="assets/images/other_images/bg1.jpg" />
+                                                <img className="lazyOwl" alt="" data-src="assets/images/other_images/bg1.jpg" />
                                             </div>
-
                                             <div>
                                                 <h6 className="caption">Caption for Image 2</h6>
-                                                <img className="lazyOwl" data-src="assets/images/other_images/bg2.jpg" />
+                                                <img className="lazyOwl" alt="" data-src="assets/images/other_images/bg2.jpg" />
                                             </div>
-
                                             <div>
                                                 <h6 className="caption">Caption for Image 3</h6>
-                                                <img className="lazyOwl" data-src="assets/images/other_images/bg3.jpg" />
+                                                <img className="lazyOwl" alt="" data-src="assets/images/other_images/bg3.jpg" />
                                             </div>
                                         </div>
                                     </div>
                                 </article>
-
-
                                 <article className="feature-col col-md-4">
                                     <a href="" className="thumbnail linked">
                                         {/*<a href="" onclick="populate_and_open_modal(event, 'modal-content-7');" className="thumbnail linked">*/}
@@ -256,7 +221,6 @@ class Home extends Component {
                                             <p>This feature contains generic image and text content when you open popup.</p>
                                         </div>
                                     </a>
-
                                     <div className="content-to-populate-in-modal" id="modal-content-7">
                                         <img data-img-src="assets/images/other_images/top-image2.jpg" className="lazy full-width" alt="Lorem Ipsum" />
                                             <h1>Sed scelerisque</h1>
@@ -265,8 +229,6 @@ class Home extends Component {
                                         <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
                                     </div>
                                 </article>
-
-
                                 <article className="feature-col col-md-4">
                                     <a href="" className="thumbnail linked">
                                         {/*<a href="" onclick="populate_and_open_modal(event, 'modal-content-8', '', 'full-size');" className="thumbnail linked">*/}
@@ -278,105 +240,75 @@ class Home extends Component {
                                             <p>Inside this feature's popup you'll find an alternative version of an image gallery.</p>
                                         </div>
                                     </a>
-
                                     <div className="content-to-populate-in-modal" id="modal-content-8">
                                         <h1>Sed scelerisque</h1>
                                         <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. Adipiscing eros non elit imperdiet congue tiam at ligula sit amet arcu.</p>
-
-
                                     <div id="unique-id-for-alt-image-slider" className="owl-carousel popup-alt-image-gallery">
-                                        <div className="item"><a href="assets/images/other_images/bg1.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" data-src="assets/images/other_images/gallery-thumb-1.jpg" /></a></div>
-                                        <div className="item"><a href="assets/images/other_images/bg2.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" data-src="assets/images/other_images/gallery-thumb-2.jpg" /></a></div>
-                                        <div className="item"><a href="assets/images/other_images/bg3.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" data-src="assets/images/other_images/gallery-thumb-3.jpg" /></a></div>
-                                        <div className="item"><a href="assets/images/other_images/bg4.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" data-src="assets/images/other_images/gallery-thumb-4.jpg" /></a></div>
-                                        <div className="item"><a href="assets/images/other_images/bg5.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" data-src="assets/images/other_images/gallery-thumb-5.jpg" /></a></div>
-                                        <div className="item"><a href="assets/images/other_images/bg6.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" data-src="assets/images/other_images/gallery-thumb-6.jpg" /></a></div>
-                                        <div className="item"><a href="assets/images/other_images/bg2.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" data-src="assets/images/other_images/gallery-thumb-2.jpg" /></a></div>
-                                        <div className="item"><a href="assets/images/other_images/bg3.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" data-src="assets/images/other_images/gallery-thumb-3.jpg" /></a></div>
+                                        <div className="item"><a href="assets/images/other_images/bg1.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-1.jpg" /></a></div>
+                                        <div className="item"><a href="assets/images/other_images/bg2.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-2.jpg" /></a></div>
+                                        <div className="item"><a href="assets/images/other_images/bg3.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-3.jpg" /></a></div>
+                                        <div className="item"><a href="assets/images/other_images/bg4.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-4.jpg" /></a></div>
+                                        <div className="item"><a href="assets/images/other_images/bg5.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-5.jpg" /></a></div>
+                                        <div className="item"><a href="assets/images/other_images/bg6.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-6.jpg" /></a></div>
+                                        <div className="item"><a href="assets/images/other_images/bg2.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-2.jpg" /></a></div>
+                                        <div className="item"><a href="assets/images/other_images/bg3.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-3.jpg" /></a></div>
                                     </div>
                         </div>
                 </article>
-
             </section>
-
-
-
         </div>
   </div>
   </article>
-
       <article id="tabs" className="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg7.jpg">
           <div className="content-wrapper mid-vertical-positioning clearfix">
               <div className="col-sm-10 col-md-9 pull-right">
-
                   <h1 className="section-title">Tabs</h1>
-
                   <div className="tabpanel styled-tabs uniform-height" role="tabpanel">
-
-
                       <ul className="nav nav-tabs" role="tablist" text-hidden-xs="true">
                           <li role="presentation" className="active"><a href="#tabs-tab1" aria-controls="tabs-tab1" role="tab" data-toggle="tab"><i className="icon fa fa-diamond"></i><span>Donec</span></a></li>
                           <li role="presentation"><a href="#tabs-tab2" aria-controls="tabs-tab2" role="tab" data-toggle="tab"><i className="icon fa fa-train"></i><span>Maecenas</span></a></li>
                           <li role="presentation"><a href="#tabs-tab3" aria-controls="tabs-tab3" role="tab" data-toggle="tab"><i className="icon fa fa-coffee"></i><span>Iaculis</span></a></li>
                           <li role="presentation"><a href="#tabs-tab4" aria-controls="tabs-tab4" role="tab" data-toggle="tab"><i className="icon fa fa-comment"></i><span>Quisque</span></a></li>
                       </ul>
-
-
                       <div className="tab-content">
-
                           <div role="tabpanel" className="tab-pane fade in active" id="tabs-tab1">
-                              <img src="assets/images/other_images/tabs-icon4.png" className="pull-right hidden-xs" />
+                              <img src="assets/images/other_images/tabs-icon4.png" alt="" className="pull-right hidden-xs" />
                                   <h4>Donec nec magna condimentum</h4>
                                   <p>Uspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio. Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui.</p>
                                   <p>Ut pretium sapien dui, id facilisis metus interdum pharetra. Totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
                           </div>
-
                           <div role="tabpanel" className="tab-pane fade" id="tabs-tab2">
-                              <img src="assets/images/other_images/tabs-icon3.png" className="pull-right hidden-xs" />
+                              <img src="assets/images/other_images/tabs-icon3.png" alt="" className="pull-right hidden-xs" />
                                   <h4>Maecenas rhoncus tortor nec mi congue</h4>
                                   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio.</p>
                           </div>
-
                           <div role="tabpanel" className="tab-pane fade" id="tabs-tab3">
-                              <img src="assets/images/other_images/tabs-icon2.png" className="pull-right hidden-xs" />
+                              <img src="assets/images/other_images/tabs-icon2.png" alt="" className="pull-right hidden-xs" />
                                   <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
                                   <p>Nunc accumsan sapien eu tortor fringilla, et condimentum metus pellentesque. Maecenas rhoncus tortor nec mi congue aliquet. Integer eu turpis scelerisque, iaculis magna non, tempor sem. Quisque consectetur nisi eu felis euismod, sit amet faucibus justo molestie. Ut pretium sapien dui, id facilisis metus interdum pharetra.</p>
                           </div>
 
                           <div role="tabpanel" className="tab-pane fade" id="tabs-tab4">
-                              <img src="assets/images/other_images/tabs-icon1.png" className="pull-right hidden-xs" />
+                              <img src="assets/images/other_images/tabs-icon1.png" alt="" className="pull-right hidden-xs" />
                                   <h4>Quisque consectetur nisi</h4>
                                   <p>Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo aliquam vulputate. Ut eget orci in sapien commodo fringilla. Maecenas rhoncus tortor nec mi congue aliquet. Integer eu turpis scelerisque, iaculis magna non, tempor sem.</p>
                                   <p>Integer eu turpis scelerisque, iaculis magna non.</p>
                           </div>
-
                       </div>
-
                   </div>
-
               </div>
           </div>
       </article>
-
       <article id="contact" className="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg4.jpg">
           <div className="content-wrapper clearfix">
-
               <h1 className="section-title">Contact</h1>
-
-
               <div className="contact-details col-sm-5 col-md-3">
                   <p>123A,<br/>Molestie Lorem Avenue,<br/>Aliquam<br/>AAA0010</p>
                   <p>Tel: (+20) 21 301 524</p>
                   <p><a href="mailto:info@loremipsum.com">info@loremipsum.com</a></p>
               </div>
-
-
-
               <div className="col-sm-7 col-md-9">
-
-                  <form className="form-style validate-form clearfix" action="assets/php/mail.php" method="POST" role="form">
-
-
+                  <form className="form-style validate-form clearfix" action="assets/php/mail.php" method="POST">
                       <div className="col-md-6">
                           <div className="form-group">
                               <input type="text" className="text-field form-control validate-field required" data-validation-type="string" id="form-name" placeholder="Full Name" name="name" />
@@ -388,50 +320,36 @@ class Home extends Component {
                               <input type="tel" className="text-field form-control validate-field phone" data-validation-type="phone" id="form-contact-number" placeholder="Contact Number" name="contact_number" />
                           </div>
                           <div className="form-group text-right">
-                              <img id="form-captcha-img" src="assets/php/form_captcha/captcha_img.php" />
+                              <img id="form-captcha-img" alt="" src="assets/php/form_captcha/captcha_img.php" />
                                   <input type="text" className="text-field form-control validate-field required" data-validation-type="captcha" id="form-captcha" placeholder="Enter text" name="captcha" />
                                       <span id="form-captcha-refresh" className="fa fa-refresh" title="Reload"></span>
                           </div>
                       </div>
-
-
                       <div className="col-md-6">
                           <div className="form-group">
                               <textarea placeholder="Message..." className="form-control validate-field required" name="message"></textarea>
                           </div>
                           <div className="form-group">
-                              <img src="assets/images/theme_images/loader-form.GIF" className="form-loader" />
+                              <img src="assets/images/theme_images/loader-form.GIF" alt="" className="form-loader" />
                                   <button type="submit" className="btn btn-sm btn-outline-inverse">Submit</button>
                           </div>
                           <div className="form-group form-general-error-container"></div>
                       </div>
-
                   </form>
               </div>
-
           </div>
       </article>
-
   </section>
-
-
       <section id="footer">
-
-
           <div id="go-to-top"><span className="icon glyphicon glyphicon-chevron-up"></span></div>
           {/*<div id="go-to-top" onclick="scroll_to_top();"><span className="icon glyphicon glyphicon-chevron-up"></span></div>*/}
-
           <ul className="social-icons">
               <li><a href="" target="_blank" title="Facebook"><img src="assets/images/theme_images/social_icons/facebook.png" alt="Facebook" /></a></li>
               <li><a href="" target="_blank" title="Twitter"><img src="assets/images/theme_images/social_icons/twitter.png" alt="Twitter" /></a></li>
               <li><a href="" target="_blank" title="Google+"><img src="assets/images/theme_images/social_icons/googleplus.png" alt="Google+" /></a></li>
           </ul>
-
-
           <div className="footer-text-line">&copy; 2014 Twilli | Air</div>
       </section>
-
-
   </div>
     );
   }

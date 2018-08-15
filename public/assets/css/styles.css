@@ -12,7 +12,7 @@ html {
 body {
     font-family: 'open_sanslight', sans-serif;
     color: #fff;
-    background: #000;
+    background: gray;
     width:100%;
     height:100%;
     font-size:18px;
@@ -1959,11 +1959,3 @@ img.full-width {
     }
     @media (min-width: 1200px) {  
     }
-
-/* ====================================================
-   OVERRIDING RULES
-   ==================================================== */
-
-.vegas-loading {
-  display:none !important;
-}
