@@ -2,3 +2,9 @@
 * Index
 */
 .Index {  }
+
+.Index .edit-mode {
+    border: .5px dotted #a9a9a9;
+    padding: 15px 0 !important;
+    position: relative;
+}

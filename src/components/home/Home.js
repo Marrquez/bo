@@ -50,8 +50,8 @@ class Home extends Component {
                 });*/
             } else {
                 let newData = {
-                    email:'',
-                    logged:false,
+                    email: '',
+                    logged: false,
                     data: {}
                 };
                 self.setState({user:newData});
@@ -142,7 +142,7 @@ class Home extends Component {
     return ( <div id="outer-container">
         <LeftSidebar></LeftSidebar>
         <section id="main-content" className="clearfix">
-            <Index></Index>
+            <Index user={this.state.user}></Index>
             <Text showModal={this.showModal.bind(this)}></Text>
             <Carrousel showModal={this.showModal.bind(this)}></Carrousel>
             <Grid></Grid>
