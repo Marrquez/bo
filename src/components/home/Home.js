@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Home.css';
 import LeftSidebar from '../left-sidebar/LeftSidebar';
+import Footer from '../footer/Footer';
 
 class Home extends Component {
   render() {
@@ -23,7 +24,9 @@ class Home extends Component {
                     <div className="content-wrapper clearfix">
                         <div className="col-sm-10 col-md-9 pull-right">
                             <h1 className="section-title">Text Content</h1>
-                            <p className="feature-paragraph"><img data-img-src="assets/images/other_images/transp-image5b.png" className="lazy pull-right" alt="Lorem Ipsum" />Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#carousel">Suspendisse molestie lorem odio</a>, sit amet. Laoreet consequat. Duis dictum lorem metus, vitae dapibus.</p>
+                            <p className="feature-paragraph">
+                                <i className="lazy pull-right icon fa fa-globe" alt="Lorem Ipsum"></i>
+                                Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#carousel">Suspendisse molestie lorem odio</a>, sit amet. Laoreet consequat. Duis dictum lorem metus, vitae dapibus.</p>
                             <h4>Duis dictum lorem metus</h4>
                             <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio. Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui.</p>
                             <p><a href="" className="btn btn-outline-inverse btn-sm">read more</a></p>
@@ -51,7 +54,7 @@ class Home extends Component {
                             <div className="carousel-inner">
                                 <div className="item active">
                                     <div className="carousel-text-content">
-                                        <img src="assets/images/other_images/transp-image1.png" className="icon" alt="Lorem Ipsum" />
+                                        <i className="lazy pull-right icon fa fa-fighter-jet" alt="Lorem Ipsum"></i>
                                         <h2 className="title">Lorem Ipsum</h2>
                                         <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio.</p>
                                         <p><a href="" className="btn btn-outline-inverse btn-sm">read more</a></p>
@@ -66,7 +69,7 @@ class Home extends Component {
                                 </div>
                                 <div className="item">
                                     <div className="carousel-text-content">
-                                        <img src="assets/images/other_images/transp-image6.png" className="icon" alt="Lorem Ipsum" />
+                                        <i className="lazy pull-right icon fa fa-camera" alt="Lorem Ipsum"></i>
                                         <h2 className="title">Suspendisse molestie</h2>
                                         <p>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.</p>
                                         <p><a href="" className="btn btn-outline-inverse btn-sm">read more</a></p>
@@ -81,34 +84,34 @@ class Home extends Component {
                                 </div>
                                 <div className="item">
                                     <div className="carousel-text-content">
-                                        <img src="assets/images/other_images/transp-image7.png" className="icon" alt="Lorem Ipsum" />
-                                            <h2 className="title">Maecenas id dolor</h2>
-                                            <p>Fusce erat augue, fermentum sit amet congue a, ullamcorper ac enim. Maecenas id dolor imperdiet, mollis felis ut, pellentesque ante. Sed id congue arcu. Nulla eget commodo sem. Suspendisse suscipit, sem ac.</p>
-                                            <p><a href="" className="btn btn-outline-inverse btn-sm">read more</a></p>
-                                            {/*<p><a href="" onclick="populate_and_open_modal(event, 'modal-content-4');" className="btn btn-outline-inverse btn-sm">read more</a></p>*/}
+                                        <i className="lazy pull-right icon fa fa-users" alt="Lorem Ipsum"></i>
+                                        <h2 className="title">Maecenas id dolor</h2>
+                                        <p>Fusce erat augue, fermentum sit amet congue a, ullamcorper ac enim. Maecenas id dolor imperdiet, mollis felis ut, pellentesque ante. Sed id congue arcu. Nulla eget commodo sem. Suspendisse suscipit, sem ac.</p>
+                                        <p><a href="" className="btn btn-outline-inverse btn-sm">read more</a></p>
+                                        {/*<p><a href="" onclick="populate_and_open_modal(event, 'modal-content-4');" className="btn btn-outline-inverse btn-sm">read more</a></p>*/}
 
-                                            <div className="content-to-populate-in-modal" id="modal-content-4">
-                                                <h1>Maecenas id dolor</h1>
-                                                <p><img data-img-src="assets/images/other_images/transp-image7.png" className="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum" />Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="">Suspendisse molestie lorem odio</a>, sit amet. </p>
-                                                <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                                                <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
-                                            </div>
+                                        <div className="content-to-populate-in-modal" id="modal-content-4">
+                                            <h1>Maecenas id dolor</h1>
+                                            <p><img data-img-src="assets/images/other_images/transp-image7.png" className="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum" />Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="">Suspendisse molestie lorem odio</a>, sit amet. </p>
+                                            <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
+                                            <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div className="item">
                                     <div className="carousel-text-content">
-                                        <img src="assets/images/other_images/transp-image4.png" className="icon" alt="Lorem Ipsum" />
-                                            <h2 className="title">Sed scelerisque</h2>
-                                            <p>Aenean a est fringilla, malesuada eros vel, condimentum augue. Sed lorem sapien, vestibulum quis nisl volutpat, fermentum adipiscing massa. Cras ac faucibus nisl. Proin ac convallis sapien. </p>
-                                            <p><a href="" className="btn btn-outline-inverse btn-sm">read more</a></p>
-                                            {/*<p><a href="" onclick="populate_and_open_modal(event, 'modal-content-5');" className="btn btn-outline-inverse btn-sm">read more</a></p>*/}
-                                            <div className="content-to-populate-in-modal" id="modal-content-5">
-                                                <h1>Sed scelerisque</h1>
-                                                <p><img data-img-src="assets/images/other_images/transp-image4.png" className="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum" />Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="">Suspendisse molestie lorem odio</a>, sit amet. </p>
-                                                <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                                                <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
-                                            </div>
+                                        <i className="lazy pull-right icon fa fa-image" alt="Lorem Ipsum"></i>
+                                        <h2 className="title">Sed scelerisque</h2>
+                                        <p>Aenean a est fringilla, malesuada eros vel, condimentum augue. Sed lorem sapien, vestibulum quis nisl volutpat, fermentum adipiscing massa. Cras ac faucibus nisl. Proin ac convallis sapien. </p>
+                                        <p><a href="" className="btn btn-outline-inverse btn-sm">read more</a></p>
+                                        {/*<p><a href="" onclick="populate_and_open_modal(event, 'modal-content-5');" className="btn btn-outline-inverse btn-sm">read more</a></p>*/}
+                                        <div className="content-to-populate-in-modal" id="modal-content-5">
+                                            <h1>Sed scelerisque</h1>
+                                            <p><img data-img-src="assets/images/other_images/transp-image4.png" className="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum" />Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="">Suspendisse molestie lorem odio</a>, sit amet. </p>
+                                            <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
+                                            <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -259,27 +262,27 @@ class Home extends Component {
                       </ul>
                       <div className="tab-content">
                           <div role="tabpanel" className="tab-pane fade in active" id="tabs-tab1">
-                              <img src="assets/images/other_images/tabs-icon4.png" alt="" className="pull-right hidden-xs" />
-                                  <h4>Donec nec magna condimentum</h4>
-                                  <p>Uspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio. Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui.</p>
-                                  <p>Ut pretium sapien dui, id facilisis metus interdum pharetra. Totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                              <i alt="" className="pull-right hidden-xs fa fa-book" />
+                              <h4>Donec nec magna condimentum</h4>
+                              <p>Uspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio. Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui.</p>
+                              <p>Ut pretium sapien dui, id facilisis metus interdum pharetra. Totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
                           </div>
                           <div role="tabpanel" className="tab-pane fade" id="tabs-tab2">
-                              <img src="assets/images/other_images/tabs-icon3.png" alt="" className="pull-right hidden-xs" />
-                                  <h4>Maecenas rhoncus tortor nec mi congue</h4>
-                                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio.</p>
+                              <i alt="" className="pull-right hidden-xs fa fa-car" />
+                              <h4>Maecenas rhoncus tortor nec mi congue</h4>
+                              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio.</p>
                           </div>
                           <div role="tabpanel" className="tab-pane fade" id="tabs-tab3">
-                              <img src="assets/images/other_images/tabs-icon2.png" alt="" className="pull-right hidden-xs" />
-                                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-                                  <p>Nunc accumsan sapien eu tortor fringilla, et condimentum metus pellentesque. Maecenas rhoncus tortor nec mi congue aliquet. Integer eu turpis scelerisque, iaculis magna non, tempor sem. Quisque consectetur nisi eu felis euismod, sit amet faucibus justo molestie. Ut pretium sapien dui, id facilisis metus interdum pharetra.</p>
+                              <i alt="" className="pull-right hidden-xs fa fa-cube" />
+                              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                              <p>Nunc accumsan sapien eu tortor fringilla, et condimentum metus pellentesque. Maecenas rhoncus tortor nec mi congue aliquet. Integer eu turpis scelerisque, iaculis magna non, tempor sem. Quisque consectetur nisi eu felis euismod, sit amet faucibus justo molestie. Ut pretium sapien dui, id facilisis metus interdum pharetra.</p>
                           </div>
 
                           <div role="tabpanel" className="tab-pane fade" id="tabs-tab4">
-                              <img src="assets/images/other_images/tabs-icon1.png" alt="" className="pull-right hidden-xs" />
-                                  <h4>Quisque consectetur nisi</h4>
-                                  <p>Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo aliquam vulputate. Ut eget orci in sapien commodo fringilla. Maecenas rhoncus tortor nec mi congue aliquet. Integer eu turpis scelerisque, iaculis magna non, tempor sem.</p>
-                                  <p>Integer eu turpis scelerisque, iaculis magna non.</p>
+                              <i alt="" className="pull-right hidden-xs fa fa-list" />
+                              <h4>Quisque consectetur nisi</h4>
+                              <p>Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo aliquam vulputate. Ut eget orci in sapien commodo fringilla. Maecenas rhoncus tortor nec mi congue aliquet. Integer eu turpis scelerisque, iaculis magna non, tempor sem.</p>
+                              <p>Integer eu turpis scelerisque, iaculis magna non.</p>
                           </div>
                       </div>
                   </div>
@@ -327,16 +330,7 @@ class Home extends Component {
           </div>
       </article>
   </section>
-      <section id="footer">
-          <div id="go-to-top"><span className="icon glyphicon glyphicon-chevron-up"></span></div>
-          {/*<div id="go-to-top" onclick="scroll_to_top();"><span className="icon glyphicon glyphicon-chevron-up"></span></div>*/}
-          <ul className="social-icons">
-              <li><a href="" target="_blank" title="Facebook"><img src="assets/images/theme_images/social_icons/facebook.png" alt="Facebook" /></a></li>
-              <li><a href="" target="_blank" title="Twitter"><img src="assets/images/theme_images/social_icons/twitter.png" alt="Twitter" /></a></li>
-              <li><a href="" target="_blank" title="Google+"><img src="assets/images/theme_images/social_icons/googleplus.png" alt="Google+" /></a></li>
-          </ul>
-          <div className="footer-text-line">&copy; 2014 Twilli | Air</div>
-      </section>
+        <Footer></Footer>
   </div>
     );
   }
