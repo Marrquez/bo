@@ -1,6 +1,31 @@
 import React, { Component } from 'react';
 import './Footer.css';
 
+/**
+ * Show the current user info
+ * */
+class Profile extends Component {
+    constructor(props) {
+        super();
+        this.state = {
+            email: ''
+        };
+    }
+    componentWillMount(){
+        this.setState({email: this.props.user.email});
+    }
+    render(){
+        return <div>
+            Ingresaste como: {this.state.email}
+            <br />
+            <a onClick={this.props.signOutUser}>Salir</a>
+        </div>;
+    }
+}
+
+/**
+ * Log the user in
+ * */
 class LoginForm extends Component {
     constructor(props) {
         super();
@@ -44,7 +69,7 @@ class LoginForm extends Component {
                 </div>
                 <div className="form-group text-right">
                     <div className="col-sm-12">
-                        <button type="submit" className="btn btn-sm btn-outline-inverse">Submit</button>
+                        <button type="submit" className="btn btn-sm btn-outline-inverse">Entrar</button>
                     </div>
                 </div>
             </div>
@@ -67,11 +92,11 @@ class RecoverForm extends Component {
         this.setState({email:e.target.value});
     }
     render(){
-        return <form className="form" onSubmit={this.recoverPswd.bind(this)} id="login-nav">
+        return <form className="form-style validate-form clearfix" onSubmit={this.recoverPswd.bind(this)}>
             <div className="form-group">
                 <label className="sr-only" htmlFor="exampleInputEmail2">Email address</label>
                 <input type="email"
-                       className="form-control"
+                       className="text-field form-control validate-field required"
                        id="exampleInputEmail2"
                        placeholder="Email address"
                        required
@@ -80,7 +105,8 @@ class RecoverForm extends Component {
                 />
             </div>
             <div className="form-group">
-                <button type="submit" className="btn btn-primary btn-block">Recover password</button>
+                <button type="submit" className="btn btn-sm btn-outline-inverse">Recuperar</button>
+                <button type="button" onClick={this.props.goBack} className="btn btn-sm btn-outline-inverse back">Cancelar</button>
             </div>
         </form>;
     }
@@ -105,11 +131,11 @@ class RegisterForm extends Component {
         this.setState({pswd:e.target.value});
     }
     render(){
-        return <form className="form" onSubmit={this.signInUser.bind(this)} id="login-nav">
+        return <form className="form-style validate-form clearfix" onSubmit={this.signInUser.bind(this)}>
             <div className="form-group">
                 <label className="sr-only" htmlFor="exampleInputEmail2">Email address</label>
                 <input type="email"
-                       className="form-control"
+                       className="text-field form-control validate-field required"
                        id="exampleInputEmail2"
                        placeholder="Email address"
                        required
@@ -120,7 +146,7 @@ class RegisterForm extends Component {
             <div className="form-group">
                 <label className="sr-only" htmlFor="exampleInputPassword2">Password</label>
                 <input type="password"
-                       className="form-control"
+                       className="text-field form-control validate-field required"
                        id="exampleInputPassword2"
                        placeholder="Password"
                        required
@@ -129,7 +155,8 @@ class RegisterForm extends Component {
                 />
             </div>
             <div className="form-group">
-                <button type="submit" className="btn btn-primary btn-block">Register</button>
+                <button type="submit" className="btn btn-sm btn-outline-inverse">Registrarme</button>
+                <button type="button" onClick={this.props.goBack} className="btn btn-sm btn-outline-inverse back">Cancelar</button>
             </div>
         </form>;
     }
@@ -158,15 +185,22 @@ class Footer extends Component {
     navigate(view){
         this.setState({view:view});
     }
+    signInUser(user){
+        this.props.signInUser(user);
+        this.navigate('login');
+    }
+    signOutUser(){
+        this.props.signOutUser();
+        this.navigate('login');
+    }
   render() {
       var currentForm = null;
 
-      if(this.state.view === 'login'){
+      if(this.props.user.logged){
+        currentForm = <Profile user={this.props.user} signOutUser={this.signOutUser.bind(this)}></Profile>;
+      }else if(this.state.view === 'login'){
         currentForm = <div>
-            <LoginForm
-                signIn={this.navigate.bind(this)}
-                recoverPswd={this.navigate.bind(this)}
-            ></LoginForm>
+            <LoginForm logInUser={this.props.logInUser}></LoginForm>
             <div className="col-sm-12">
                 <a onClick={() => this.navigate("recover")} >Recuperar contraseña</a><br />
                 <a onClick={() => this.navigate("signin")} >Registrarme</a>
@@ -174,11 +208,10 @@ class Footer extends Component {
             <div className="col-sm-12"><br /></div>
         </div>;
       }else if(this.state.view === 'signin'){
-          currentForm = <h1>Registrarse</h1>;
+          currentForm = <RegisterForm goBack={() => this.navigate("login")} signInUser={this.signInUser.bind(this)}></RegisterForm>;
       }else if(this.state.view === 'recover'){
-          currentForm = <h1>Recuperar</h1>;
+          currentForm = <RecoverForm goBack={() => this.navigate("login")} recoverByEmail={this.props.recoverByEmail.bind(this)}></RecoverForm>;
       }
-
       return (
           <section id="footer">
               {currentForm}

@@ -940,11 +940,6 @@ function validate_and_submit_forms(form_object)
         });
         // -------------- end: onChange of each form field --------------
 
-        // -------------- reload captcha --------------
-        this_form.find("#form-captcha-refresh").click(function() {
-            reset_captcha(this_form);
-        });
-
         // -------------- on Submit of form --------------
         this_form.submit(function(event)
         {
@@ -1006,15 +1001,11 @@ function validate_and_submit_forms(form_object)
                     this_form.find(".form-loader").fadeOut("fast");
 
                     var submission_successful = (data == "success") ? true : false;
-                    var captcha_success = (data == "captcha") ? false : true;
 
                     var message = "";
                     switch(data) {
                         case "success":
                             message = "Form submitted successfully.";
-                            break;
-                        case "captcha":
-                            message = "Incorrect text entered. (Case-sensitive)";
                             break;
                         case "incomplete":
                             message = "Please fill in all required fields.";
@@ -1029,21 +1020,12 @@ function validate_and_submit_forms(form_object)
                     message_field_html += (submission_successful == true) ? 'success' : 'error';
                     message_field_html += '">'+message+'</div>';
 
-                    // incorrect captcha
-                    if (!captcha_success) {
-                        this_form.find("#form-captcha").parent(".form-group").append(message_field_html);
-                        this_form.find("#form-captcha").siblings(".alert").fadeIn("fast");
-                    }
-                    // general message
-                    else {
-                        this_form.find(".form-general-error-container").html(message_field_html).fadeIn("fast", function(){
-                            // if submission was successful, hide message after some time
-                            $(this).delay(10000).fadeOut("fast", function(){ $(this).html(""); });
-                        });
-                    }
 
-                    // refresh captcha
-                    reset_captcha(this_form);
+                    this_form.find(".form-general-error-container").html(message_field_html).fadeIn("fast", function(){
+                        // if submission was successful, hide message after some time
+                        $(this).delay(10000).fadeOut("fast", function(){ $(this).html(""); });
+                    });
+
 
                     // if form submitted successfully, empty fields
                     if (submission_successful == true) this_form.find(".form-control").val("");
@@ -1084,30 +1066,7 @@ function validate_and_submit_forms(form_object)
         form.find("input").val('');
         form.find(".alert").remove();
         form.find(".form-general-error-container").empty().hide();
-        reset_captcha(form_object);
     }    
- }
-
-/*
- * ================================================================
- * Reset form captchas
- *
- * @param form_object - object - required - the form which will be reset
- */
- function reset_captcha(form_object)
- {
-    var forms = (form_object !== undefined && form_object.length > 0) ? form_object : $("form.validate-form");
-    // for each form 
-    forms.each(function(){
-        var this_form = $(this);
-        var captcha = this_form.find("#form-captcha-img");
-        if (captcha.length > 0 && this_form.is(":visible")) {
-            var d = new Date().getTime();
-            captcha.replaceWith('<img id="form-captcha-img" src="assets/php/form_captcha/captcha_img.php?t='+d+'" style="display:none">');
-            this_form.find("#form-captcha").val("");
-            setTimeout(function() { this_form.find("#form-captcha-img").show(); }, 500);
-        }
-    });  
  }
 
 /*

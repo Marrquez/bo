@@ -110,15 +110,6 @@ function initialise_document_ready_functions()
           var carousel_initialised_data = $('#common-modal .popup-image-gallery, #common-modal .popup-alt-image-gallery').data('owlCarousel');
           carousel_initialised_data.destroy();
         }
-
-        // reset captcha outside popup
-        if ($('#common-modal form.validate-form').length > 0)
-        {
-            setTimeout(function(){
-                $('#common-modal form.validate-form').remove();
-                reset_captcha();
-            }, 500);
-        }        
     });
     // ------ END: Owl Carousel ------    
 

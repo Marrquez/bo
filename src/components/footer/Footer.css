@@ -2,3 +2,9 @@
 * Footer
 */
 .Footer {  }
+
+.back {
+    color: #666;
+    background: #ccc;
+    margin-left: 5px;
+}
