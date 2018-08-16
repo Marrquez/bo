@@ -662,93 +662,6 @@ function set_equal_height_to_all_carousel_slides_on_small_displays()
 
 /*
  * ================================================================
- * Populate and Open Modal (Popup)
- *
- * @param event - NEEDED to stop default link actions (since link will be used to open popup)
- * @param modal_content_id - the id of the container with the content which will be populated in the modal body
- * @param section_in_modal - selector - optional - if set, when modal is shown, the popup will scroll to this section
- * @param add_class_to_modal - optional - add a class to the modal container (#common-modal)
- */
-function populate_and_open_modal(event, modal_content_id, section_in_modal, add_class_to_modal)
-{
-    var modal = $("#common-modal.modal");
-    var modal_body = modal.find(".modal-body");
-    var modal_content_container_to_populate = $("#"+modal_content_id);
-
-    var add_class = "";
-    if (add_class_to_modal !== undefined && add_class_to_modal != "") {
-        add_class = add_class_to_modal;
-    }
-
-    // if modal and content container exists
-    if (modal_body.length > 0 && modal_content_container_to_populate.length > 0)
-    {
-        // fade out main content of page (so modal content is readable)
-        $("#outer-container").fadeTo("fast",0.2);
-
-        // get initial vertical offset so that when modal is opened/closed, it ensures that page doesn't scroll to top (bugfix)
-        var initial_vertical_scroll_offset = $(document).scrollTop();
-
-        var modal_content = modal_content_container_to_populate.html(); // get content to populate in modal
-        modal_body.empty().html(modal_content); // first empty the modal body and then populate it with new content
-
-        // open modal (popup)
-        modal.modal(); 
-
-        // lightbox fix - temporary change attribute, to avoid duplicate entries (since same content is printed inside the popup container)
-        modal_content_container_to_populate.find("a[data-lightbox]").each(function() {
-            var attr_value = $(this).attr("data-lightbox");
-            $(this).removeAttr("data-lightbox");
-            $(this).attr("data-mod-lightbox", attr_value);
-        });
-
-        // add class to modal
-        if (add_class != "") modal.addClass(add_class);
-
-        // when modal is shown, position it in the middle of the page 
-        modal.on('shown.bs.modal', function (e) {
-            position_modal_at_centre();
-            // if set, scroll to a given section inside the popup
-            if (section_in_modal !== undefined && section_in_modal != "" && $("#common-modal.modal").find(section_in_modal).length > 0)
-            {
-                var section_vertical_offset = $("#common-modal.modal").find(section_in_modal).offset().top;
-                $('#common-modal.modal').stop().animate({
-                    scrollTop: section_vertical_offset
-                }, 800,'easeInOutCubic');   
-            }
-
-            // since bootstrap 3.3.1 - fix backdrop height after all elements inside the popup are loaded
-            modal_backdrop_height(modal);
-        });
-
-        // when modal starts to close, fade in main content 
-        modal.on('hide.bs.modal', function (e) {
-            $("#outer-container").fadeTo("fast",1);
-
-            // lightbox fix - reset attribute to original
-            $("#"+modal_content_id).find("a[data-mod-lightbox]").each(function() {
-                var attr_value = $(this).attr("data-mod-lightbox");
-                $(this).removeAttr("data-mod-lightbox");
-                $(this).attr("data-lightbox", attr_value);
-            });            
-        });
-
-        // when modal is hidden, empty modal body 
-        modal.on('hidden.bs.modal', function (e) {
-            modal_body.empty(); // empty modal body
-
-            if (add_class != "") modal.removeClass(add_class); // remove class
-        });       
-
-    }
-    // end: if modal and content container exists
-
-    event.preventDefault ? event.preventDefault() : event.returnValue = false; 
-    return false;     
-}
-
-/*
- * ================================================================
  * Update modal backdrop height
  * - since bootstrap 3.3.1 - fix backdrop height after all elements inside the popup are loaded
  *
@@ -785,7 +698,7 @@ function position_modal_at_centre()
         // end: for large viewports
 
         // for smaller viewports
-        else 
+        else
         {
             modal_content_container.removeAttr("style");
         }

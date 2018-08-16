@@ -22,7 +22,8 @@ class Home extends Component {
     constructor(props) {
         super();
         this.state = {
-            user: {email: '', logged:false, data:{}}
+            user: {email: '', logged:false, data:{}},
+            modalContent: null
         }
     }
     componentDidMount(){ }
@@ -127,6 +128,9 @@ class Home extends Component {
     notify(msg){
         toast(msg);
     }
+    showModal(content){
+        this.setState({modalContent: content});
+    }
   render() {
     return ( <div id="outer-container">
         <LeftSidebar></LeftSidebar>
@@ -151,16 +155,14 @@ class Home extends Component {
                             Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="#carousel">Suspendisse molestie lorem odio</a>, sit amet. Laoreet consequat. Duis dictum lorem metus, vitae dapibus.</p>
                         <h4>Duis dictum lorem metus</h4>
                         <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio. Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui.</p>
-                        <p><a href="" className="btn btn-outline-inverse btn-sm">read more</a></p>
-                        {/*<p><a href="" onclick="populate_and_open_modal(event, 'modal-content-1');" className="btn btn-outline-inverse btn-sm">read more</a></p>*/}
-                        <div className="content-to-populate-in-modal" id="modal-content-1">
+                        <p><a data-toggle="modal" data-target="#common-modal" onClick={() => this.showModal(<div className="content-to-populate-in-modal" id="modal-content-1">
                             <h1>Lorem Ipsum</h1>
-                            <p><img data-img-src="assets/images/other_images/transp-image4.png" className="lazy rounded_border hover_effect pull-right" alt="Lorem Ipsum" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in urna vel ante mollis tincidunt. Donec nec magna condimentum tortor laoreet lobortis. Nunc accumsan sapien eu tortor fringilla, et condimentum metus pellentesque. Maecenas rhoncus tortor nec mi congue aliquet. Integer eu turpis scelerisque, iaculis magna non, tempor sem. Quisque consectetur nisi eu felis euismod, sit amet faucibus justo molestie. Ut pretium sapien dui, id facilisis metus interdum pharetra.</p>
+                            <p><i className="lazy pull-right icon fa fa-globe" alt="Lorem Ipsum"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in urna vel ante mollis tincidunt. Donec nec magna condimentum tortor laoreet lobortis. Nunc accumsan sapien eu tortor fringilla, et condimentum metus pellentesque. Maecenas rhoncus tortor nec mi congue aliquet. Integer eu turpis scelerisque, iaculis magna non, tempor sem. Quisque consectetur nisi eu felis euismod, sit amet faucibus justo molestie. Ut pretium sapien dui, id facilisis metus interdum pharetra.</p>
                             <p>Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo aliquam vulputate. Ut eget orci in sapien commodo fringilla. Ut luctus faucibus viverra. Quisque ut ante eget libero rutrum imperdiet. Morbi in diam bibendum, venenatis arcu sed, consequat libero. Nulla imperdiet, ipsum et adipiscing pulvinar, nibh metus porta mauris, et vestibulum dolor sapien sit amet justo. In dignissim leo nec erat faucibus volutpat.</p>
                             <h3>Duis dictum lorem metus, vitae dapibus</h3>
-                            <p><img data-img-src="assets/images/other_images/transp-image3.png" className="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum" />Sed auctor urna mi, sed fringilla felis vulputate nec. Cras eu nibh id quam pretium convallis. Donec ante enim, placerat nec sagittis sit amet, tempor in velit. Maecenas ultricies commodo lacus id porta. Suspendisse eros elit, lacinia vitae erat vitae, egestas accumsan nunc. Maecenas dictum odio ipsum, non volutpat erat consequat tempor. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui feugiat molestie sit amet eget purus. Morbi eget neque nec lectus tempus sagittis nec at ante. </p>
+                            <p><i className="lazy pull-left icon fa fa-globe" alt="Lorem Ipsum"></i>Sed auctor urna mi, sed fringilla felis vulputate nec. Cras eu nibh id quam pretium convallis. Donec ante enim, placerat nec sagittis sit amet, tempor in velit. Maecenas ultricies commodo lacus id porta. Suspendisse eros elit, lacinia vitae erat vitae, egestas accumsan nunc. Maecenas dictum odio ipsum, non volutpat erat consequat tempor. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui feugiat molestie sit amet eget purus. Morbi eget neque nec lectus tempus sagittis nec at ante. </p>
                             <p>Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo aliquam vulputate. Ut eget orci in sapien commodo fringilla. Ut luctus faucibus viverra. Quisque ut ante eget libero rutrum imperdiet. Morbi in diam bibendum, venenatis arcu sed, consequat libero. Nulla imperdiet, ipsum et adipiscing pulvinar, nibh metus porta mauris, et vestibulum dolor sapien sit amet justo. In dignissim leo nec erat faucibus volutpat.</p>
-                        </div>
+                        </div>)} className="btn btn-outline-inverse btn-sm">read more</a></p>
                     </div>
                 </div>
             </article>
@@ -179,14 +181,12 @@ class Home extends Component {
                                     <i className="lazy pull-right icon fa fa-fighter-jet" alt="Lorem Ipsum"></i>
                                     <h2 className="title">Lorem Ipsum</h2>
                                     <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio.</p>
-                                    <p><a href="" className="btn btn-outline-inverse btn-sm">read more</a></p>
-                                    {/*<p><a href="" onClick="populate_and_open_modal(event, 'modal-content-2');" className="btn btn-outline-inverse btn-sm">read more</a></p>*/}
-                                    <div className="content-to-populate-in-modal" id="modal-content-2">
+                                    <p><a data-toggle="modal" data-target="#common-modal" onClick={() => this.showModal(<div className="content-to-populate-in-modal" id="modal-content-2">
                                         <h1>Lorem Ipsum</h1>
-                                        <p><img data-img-src="assets/images/other_images/transp-image1.png" className="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum" />Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="">Suspendisse molestie lorem odio</a>, sit amet. </p>
+                                        <p><i className="lazy pull-left icon fa fa-globe" alt="Lorem Ipsum"></i>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="">Suspendisse molestie lorem odio</a>, sit amet. </p>
                                         <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                                         <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
-                                    </div>
+                                    </div>)} className="btn btn-outline-inverse btn-sm">read more</a></p>
                                 </div>
                             </div>
                             <div className="item">
@@ -194,14 +194,12 @@ class Home extends Component {
                                     <i className="lazy pull-right icon fa fa-camera" alt="Lorem Ipsum"></i>
                                     <h2 className="title">Suspendisse molestie</h2>
                                     <p>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.</p>
-                                    <p><a href="" className="btn btn-outline-inverse btn-sm">read more</a></p>
-                                    {/*<p><a href="" onclick="populate_and_open_modal(event, 'modal-content-3');" className="btn btn-outline-inverse btn-sm">read more</a></p>*/}
-                                    <div className="content-to-populate-in-modal" id="modal-content-3">
+                                    <p><a data-toggle="modal" data-target="#common-modal" onClick={() => this.showModal(<div className="content-to-populate-in-modal" id="modal-content-3">
                                         <h1>Suspendisse molestie</h1>
-                                        <p><img data-img-src="assets/images/other_images/transp-image6.png" className="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum" />Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="">Suspendisse molestie lorem odio</a>, sit amet. </p>
+                                        <p><i className="lazy pull-left icon fa fa-globe" alt="Lorem Ipsum"></i>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="">Suspendisse molestie lorem odio</a>, sit amet. </p>
                                         <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                                         <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
-                                    </div>
+                                    </div>)} className="btn btn-outline-inverse btn-sm">read more</a></p>
                                 </div>
                             </div>
                             <div className="item">
@@ -209,15 +207,12 @@ class Home extends Component {
                                     <i className="lazy pull-right icon fa fa-users" alt="Lorem Ipsum"></i>
                                     <h2 className="title">Maecenas id dolor</h2>
                                     <p>Fusce erat augue, fermentum sit amet congue a, ullamcorper ac enim. Maecenas id dolor imperdiet, mollis felis ut, pellentesque ante. Sed id congue arcu. Nulla eget commodo sem. Suspendisse suscipit, sem ac.</p>
-                                    <p><a href="" className="btn btn-outline-inverse btn-sm">read more</a></p>
-                                    {/*<p><a href="" onclick="populate_and_open_modal(event, 'modal-content-4');" className="btn btn-outline-inverse btn-sm">read more</a></p>*/}
-
-                                    <div className="content-to-populate-in-modal" id="modal-content-4">
+                                    <p><a data-toggle="modal" data-target="#common-modal" onClick={() => this.showModal(<div className="content-to-populate-in-modal" id="modal-content-4">
                                         <h1>Maecenas id dolor</h1>
-                                        <p><img data-img-src="assets/images/other_images/transp-image7.png" className="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum" />Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="">Suspendisse molestie lorem odio</a>, sit amet. </p>
+                                        <p><i className="lazy pull-left icon fa fa-globe" alt="Lorem Ipsum"></i>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="">Suspendisse molestie lorem odio</a>, sit amet. </p>
                                         <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                                         <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
-                                    </div>
+                                    </div>)} className="btn btn-outline-inverse btn-sm">read more</a></p>
                                 </div>
                             </div>
 
@@ -226,19 +221,17 @@ class Home extends Component {
                                     <i className="lazy pull-right icon fa fa-image" alt="Lorem Ipsum"></i>
                                     <h2 className="title">Sed scelerisque</h2>
                                     <p>Aenean a est fringilla, malesuada eros vel, condimentum augue. Sed lorem sapien, vestibulum quis nisl volutpat, fermentum adipiscing massa. Cras ac faucibus nisl. Proin ac convallis sapien. </p>
-                                    <p><a href="" className="btn btn-outline-inverse btn-sm">read more</a></p>
-                                    {/*<p><a href="" onclick="populate_and_open_modal(event, 'modal-content-5');" className="btn btn-outline-inverse btn-sm">read more</a></p>*/}
-                                    <div className="content-to-populate-in-modal" id="modal-content-5">
+                                    <p><a data-toggle="modal" data-target="#common-modal" onClick={() => this.showModal(<div className="content-to-populate-in-modal" id="modal-content-5">
                                         <h1>Sed scelerisque</h1>
-                                        <p><img data-img-src="assets/images/other_images/transp-image4.png" className="lazy rounded_border hover_effect pull-left" alt="Lorem Ipsum" />Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="">Suspendisse molestie lorem odio</a>, sit amet. </p>
+                                        <p><i className="lazy pull-left icon fa fa-globe" alt="Lorem Ipsum"></i>Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. <a href="">Suspendisse molestie lorem odio</a>, sit amet. </p>
                                         <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                                         <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
-                                    </div>
+                                    </div>)} className="btn btn-outline-inverse btn-sm">read more</a></p>
                                 </div>
                             </div>
                         </div>
-                        <a className="left carousel-control" href="#features-carousel" data-slide="prev"><i></i></a>
-                        <a className="right carousel-control" href="#features-carousel" data-slide="next"><i></i></a>
+                        <a className="left fa fa-chevron-left carousel-control" href="#features-carousel" data-slide="prev"><i></i></a>
+                        <a className="right fa fa-chevron-right carousel-control" href="#features-carousel" data-slide="next"><i></i></a>
                     </div>
                 </div>
             </article>
@@ -292,39 +285,14 @@ class Home extends Component {
                     <div className="col-sm-11 pull-right">
                         <h1 className="section-title">Featured</h1>
                         <section className="feature-columns row clearfix">
-                            <article className="feature-col col-md-4">
-                                <a href="" className="thumbnail linked">
-                                    {/*<a href="" onclick="populate_and_open_modal(event, 'modal-content-6');" className="thumbnail linked">*/}
-                                    <div className="image-container">
-                                        <img data-img-src="assets/images/other_images/project-3.jpg" className="lazy item-thumbnail" alt="Lorem Ipsum" />
-                                    </div>
-                                    <div className="caption">
-                                        <h5>Image Carousel</h5>
-                                        <p>This feature contains an image carousel when you open popup.</p>
-                                    </div>
-                                </a>
-                                <div className="content-to-populate-in-modal" id="modal-content-6">
+                            <article className="feature-col col-md-6">
+                                <a data-toggle="modal" data-target="#common-modal" onClick={() => this.showModal(<div className="content-to-populate-in-modal" id="modal-content-7">
+                                    <img data-img-src="assets/images/other_images/top-image2.jpg" className="lazy full-width" alt="Lorem Ipsum" />
                                     <h1>Sed scelerisque</h1>
-                                    <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat.<br/></p>
-                                    <div id="unique-id-for-image-slider" className="owl-carousel popup-image-gallery">
-                                        <div>
-                                            <h6 className="caption">Caption for Image 1</h6>
-                                            <img className="lazyOwl" alt="" data-src="assets/images/other_images/bg1.jpg" />
-                                        </div>
-                                        <div>
-                                            <h6 className="caption">Caption for Image 2</h6>
-                                            <img className="lazyOwl" alt="" data-src="assets/images/other_images/bg2.jpg" />
-                                        </div>
-                                        <div>
-                                            <h6 className="caption">Caption for Image 3</h6>
-                                            <img className="lazyOwl" alt="" data-src="assets/images/other_images/bg3.jpg" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article className="feature-col col-md-4">
-                                <a href="" className="thumbnail linked">
-                                    {/*<a href="" onclick="populate_and_open_modal(event, 'modal-content-7');" className="thumbnail linked">*/}
+                                    <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. </p>
+                                    <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
+                                    <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                                </div>)} className="thumbnail linked">
                                     <div className="image-container">
                                         <img data-img-src="assets/images/other_images/project-2.jpg" className="lazy item-thumbnail" alt="Lorem Ipsum" />
                                     </div>
@@ -333,17 +301,23 @@ class Home extends Component {
                                         <p>This feature contains generic image and text content when you open popup.</p>
                                     </div>
                                 </a>
-                                <div className="content-to-populate-in-modal" id="modal-content-7">
-                                    <img data-img-src="assets/images/other_images/top-image2.jpg" className="lazy full-width" alt="Lorem Ipsum" />
-                                        <h1>Sed scelerisque</h1>
-                                        <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. </p>
-                                    <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
-                                    <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
-                                </div>
+
                             </article>
-                            <article className="feature-col col-md-4">
-                                <a href="" className="thumbnail linked">
-                                    {/*<a href="" onclick="populate_and_open_modal(event, 'modal-content-8', '', 'full-size');" className="thumbnail linked">*/}
+                            <article className="feature-col col-md-6">
+                                <a data-toggle="modal" data-target="#common-modal" onClick={() => this.showModal(<div className="content-to-populate-in-modal" id="modal-content-8">
+                                    <h1>Sed scelerisque</h1>
+                                    <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. Adipiscing eros non elit imperdiet congue tiam at ligula sit amet arcu.</p>
+                                    <div id="unique-id-for-alt-image-slider" className="owl-carousel popup-alt-image-gallery">
+                                        <div className="item"><a href="assets/images/other_images/project-4.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-1.jpg" /></a></div>
+                                        <div className="item"><a href="assets/images/other_images/project-4.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-2.jpg" /></a></div>
+                                        <div className="item"><a href="assets/images/other_images/project-4.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-3.jpg" /></a></div>
+                                        <div className="item"><a href="assets/images/other_images/project-4.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-4.jpg" /></a></div>
+                                        <div className="item"><a href="assets/images/other_images/project-4.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-5.jpg" /></a></div>
+                                        <div className="item"><a href="assets/images/other_images/project-4.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-6.jpg" /></a></div>
+                                        <div className="item"><a href="assets/images/other_images/project-4.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-2.jpg" /></a></div>
+                                        <div className="item"><a href="assets/images/other_images/project-4.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-3.jpg" /></a></div>
+                                    </div>
+                                </div>)} className="thumbnail linked">
                                     <div className="image-container">
                                         <img data-img-src="assets/images/other_images/project-4.jpg" className="lazy item-thumbnail" alt="Lorem Ipsum" />
                                     </div>
@@ -352,20 +326,7 @@ class Home extends Component {
                                         <p>Inside this feature's popup you'll find an alternative version of an image gallery.</p>
                                     </div>
                                 </a>
-                                <div className="content-to-populate-in-modal" id="modal-content-8">
-                                    <h1>Sed scelerisque</h1>
-                                    <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. Adipiscing eros non elit imperdiet congue tiam at ligula sit amet arcu.</p>
-                                    <div id="unique-id-for-alt-image-slider" className="owl-carousel popup-alt-image-gallery">
-                                        <div className="item"><a href="assets/images/other_images/bg1.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-1.jpg" /></a></div>
-                                        <div className="item"><a href="assets/images/other_images/bg2.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-2.jpg" /></a></div>
-                                        <div className="item"><a href="assets/images/other_images/bg3.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-3.jpg" /></a></div>
-                                        <div className="item"><a href="assets/images/other_images/bg4.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-4.jpg" /></a></div>
-                                        <div className="item"><a href="assets/images/other_images/bg5.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-5.jpg" /></a></div>
-                                        <div className="item"><a href="assets/images/other_images/bg6.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-6.jpg" /></a></div>
-                                        <div className="item"><a href="assets/images/other_images/bg2.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-2.jpg" /></a></div>
-                                        <div className="item"><a href="assets/images/other_images/bg3.jpg" data-lightbox="popup-alt-gallery"><img className="lazyOwl" alt="" data-src="assets/images/other_images/gallery-thumb-3.jpg" /></a></div>
-                                    </div>
-                                </div>
+
                             </article>
                         </section>
                     </div>
@@ -455,6 +416,16 @@ class Home extends Component {
             recoverByEmail={this.recoverByEmail.bind(this)}>
         </Footer>
         <ToastContainer />
+        <div className="modal fade" id="common-modal" tabIndex="-1" role="dialog" aria-hidden="true">
+            <div className="modal-dialog">
+                <div className="modal-content">
+                    <button type="button" className="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <div className="modal-body clearfix">
+                        {this.state.modalContent}
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>);
   }
 }
