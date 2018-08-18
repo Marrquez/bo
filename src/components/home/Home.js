@@ -25,11 +25,24 @@ var config = {
 };
 firebase.initializeApp(config);
 
+var defaultIndexContent = {
+    title: 'Say more with less with TWILLI Air',
+    description: 'TWILLI Air is a fully-responsive, minimalistic HTML template, designed to be ideal for websites with concise content.',
+    button: 'find out more'
+};
+
 class Home extends Component {
     constructor(props) {
         super();
         this.state = {
-            user: {email: '', logged:false, data:{}},
+            user: {
+                email: '',
+                logged:false,
+                pageData:{
+                    index: defaultIndexContent
+                },
+                userData: {}
+            },
             modalContent: null
         }
     }
@@ -41,20 +54,27 @@ class Home extends Component {
                 let newData ={
                     email: user.email,
                     logged: true,
-                    data: user
+                    pageData: {},
+                    userData: user
                 };
-                self.setState({user:newData});
-                /*firebase.database().ref('users/' + user.uid).on('value', function(snapshot){
-                    user.email = snapshot.val() ? snapshot.val().email : "";
-
-                });*/
+                firebase.database().ref('users/' + user.uid).on('value', function(snapshot){
+                    newData.pageData.index = snapshot.val().index;
+                    self.setState({user:newData});
+                });
             } else {
-                let newData = {
-                    email: '',
-                    logged: false,
-                    data: {}
-                };
-                self.setState({user:newData});
+                var indexContent = defaultIndexContent;
+                firebase.database().ref('users/0cVTLf8n3dTO45jDz9n47EYcY5G3').on('value', function(snapshot) {
+                    indexContent = snapshot.val().index;
+                    let newData = {
+                        email: '',
+                        logged: false,
+                        pageData: {
+                            index: indexContent
+                        },
+                        userData: {}
+                    };
+                    self.setState({user:newData});
+                });
             }
         });
     }
@@ -91,14 +111,15 @@ class Home extends Component {
             self.notify("Usuario y/o contraseña inválidos");
         });
     }
-    updateUser(email){
+    updatePageUser(page, data){
+        var self = this;
         var database = firebase.database();
-        let userId = this.state.user.data.uid;
+        let userId = this.state.user.userData.uid;
 
-        database.ref('users/' + userId).set({
-            email: email
-        }).then(function(){
-            console.log("updated!");
+        var newData = JSON.parse("{\"" + page + "\": " + JSON.stringify(data) + "}");
+
+        database.ref('users/' + userId).set(newData).then(function(){
+            self.notify("Los cambios se han guardado correctamente!");
         });
     }
     logUser(provider, providerType){
@@ -138,11 +159,16 @@ class Home extends Component {
     showModal(content){
         this.setState({modalContent: content});
     }
+    savePageData(page, data){
+        this.updatePageUser(page, data);
+    }
   render() {
     return ( <div id="outer-container">
         <LeftSidebar></LeftSidebar>
         <section id="main-content" className="clearfix">
-            <Index user={this.state.user}></Index>
+            <Index user={this.state.user}
+                   savePageData={this.savePageData.bind(this)}>
+            </Index>
             <Text showModal={this.showModal.bind(this)}></Text>
             <Carrousel showModal={this.showModal.bind(this)}></Carrousel>
             <Grid></Grid>
@@ -155,7 +181,6 @@ class Home extends Component {
             logInUser={this.logInUser.bind(this)}
             signInUser={this.signInUser.bind(this)}
             signOutUser={this.signOutUser.bind(this)}
-            updateUser={this.updateUser.bind(this)}
             recoverByEmail={this.recoverByEmail.bind(this)}>
         </Footer>
         <ToastContainer />

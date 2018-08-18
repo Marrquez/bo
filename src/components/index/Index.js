@@ -16,7 +16,13 @@ class Index extends Component {
     componentDidMount(){ }
     componentWillMount(){ }
     componentWillUnmount() { }
-    componentWillReceiveProps(nextProps){ }
+    componentWillReceiveProps(nextProps){
+        this.setState({
+            title: nextProps.user.pageData.index.title,
+            description: nextProps.user.pageData.index.description,
+            button: nextProps.user.pageData.index.button
+        });
+    }
     componentWillUpdate(nextProps, nextState){ }
     componentDidUpdate(prevProps, prevState){ }
     handleElement(e){
@@ -65,14 +71,24 @@ class Index extends Component {
     setButton(e){
         this.setState({button:e.target.value});
     }
+    savePageData(){
+        var data = {
+            'title': this.state.title,
+            'description': this.state.description,
+            'button': this.state.button
+        };
+        this.props.savePageData('index', data);
+    }
   render() {
         var title = <h1 onClick={() => this.handleElement('title')}>{this.state.title}</h1>;
         var description = <p onClick={() => this.handleElement('desc')}>{this.state.description}</p>;
         var button = <div><a onClick={() => this.handleElement('button')} className="link-scroll btn btn-outline-inverse btn-lg">{this.state.button}</a></div>;
         var editClass = "content-wrapper clearfix wow fadeInDown";
+        var saveButton = null;
 
         if(this.props.user.logged){
             editClass = "content-wrapper clearfix wow fadeInDown edit-mode";
+            saveButton = <i onClick={this.savePageData.bind(this)} className="fa fa-save"></i>;
             if(this.state.modifyTitle){
                 title = <input type="text"
                                className="text-field form-control validate-field required"
@@ -122,6 +138,7 @@ class Index extends Component {
       return (
           <article id="intro" className="Index section-wrapper clearfix">
               <div className={editClass} data-wow-delay="0.3s">
+                  {saveButton}
                   <div className="col-sm-10 col-md-9 pull-right">
                       <section className="feature-text">
                           {title}

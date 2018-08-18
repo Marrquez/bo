@@ -5,6 +5,23 @@
 
 .Index .edit-mode {
     border: .5px dotted #a9a9a9;
-    padding: 15px 0 !important;
+    padding: 15px !important;
     position: relative;
+}
+
+.edit-mode .fa-save {
+    font-size: 22px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0px;
+    width: 40px;
+    z-index: 1;
+}
+
+.edit-mode .fa-save:hover {
+    color: #1FB08A;
+    cursor: pointer;
 }
