@@ -30,6 +30,14 @@ var defaultIndexContent = {
     description: 'TWILLI Air is a fully-responsive, minimalistic HTML template, designed to be ideal for websites with concise content.',
     button: 'find out more'
 };
+var defaultTextContent = {
+    title: 'Text Content',
+    subtitle: 'Duis dictum lorem metus',
+    description1: 'Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. Laoreet consequat. Duis dictum lorem metus, vitae dapibus.',
+    description2: 'Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio. Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui.',
+    image: 'fa-globe',
+    button: 'Read more'
+};
 
 class Home extends Component {
     constructor(props) {
@@ -39,7 +47,8 @@ class Home extends Component {
                 email: '',
                 logged:false,
                 pageData:{
-                    index: defaultIndexContent
+                    index: defaultIndexContent,
+                    text: defaultTextContent
                 },
                 userData: {}
             },
@@ -58,18 +67,22 @@ class Home extends Component {
                     userData: user
                 };
                 firebase.database().ref('users/' + user.uid).on('value', function(snapshot){
-                    newData.pageData.index = snapshot.val().index;
+                    newData.pageData.index = snapshot.val().index || defaultIndexContent;
+                    newData.pageData.text = snapshot.val().text || defaultTextContent;
                     self.setState({user:newData});
                 });
             } else {
                 var indexContent = defaultIndexContent;
+                var textContent = defaultTextContent;
                 firebase.database().ref('users/0cVTLf8n3dTO45jDz9n47EYcY5G3').on('value', function(snapshot) {
-                    indexContent = snapshot.val().index;
+                    indexContent = snapshot.val().index || defaultIndexContent;
+                    textContent = snapshot.val().text || defaultTextContent;
                     let newData = {
                         email: '',
                         logged: false,
                         pageData: {
-                            index: indexContent
+                            index: indexContent,
+                            text: textContent
                         },
                         userData: {}
                     };
@@ -169,7 +182,9 @@ class Home extends Component {
             <Index user={this.state.user}
                    savePageData={this.savePageData.bind(this)}>
             </Index>
-            <Text showModal={this.showModal.bind(this)}></Text>
+            <Text user={this.state.user}
+                  savePageData={this.savePageData.bind(this)}
+                  showModal={this.showModal.bind(this)}></Text>
             <Carrousel showModal={this.showModal.bind(this)}></Carrousel>
             <Grid></Grid>
             <Feature showModal={this.showModal.bind(this)}></Feature>
